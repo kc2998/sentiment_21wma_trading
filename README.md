@@ -17,7 +17,7 @@ export FINNHUB_API_KEY=YOUR_KEY
 streamlit run app.py
 ```
 
-## Try the strategy [HERE](sentiment21wmatrading-gxsxwxmxv82jukjyyxgr9v.streamlit.app)
+## Try the strategy [HERE](https://sentiment21wmatrading-gxsxwxmxv82jukjyyxgr9v.streamlit.app)
 <img width="1388" height="974" alt="image" src="https://github.com/user-attachments/assets/ad1c5728-8c58-445b-9933-a154e70cdb7d" />
 
 
