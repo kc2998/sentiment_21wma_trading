@@ -1,0 +1,9 @@
+yfinance>=0.2.40
+pytz>=2024.1
+plotly>=5.18
+streamlit>=1.37
+transformers>=4.43
+torch>=2.2  # CPU wheel is fine; use CUDA wheel locally if you have a GPU
+requests>=2.32
+numpy>=1.26
+pandas>=2.2

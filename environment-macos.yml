@@ -1,0 +1,18 @@
+name: sentiment-21wma
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pandas>=2.2
+  - numpy>=1.26
+  - pytz>=2024.1
+  - requests>=2.32
+  - yfinance>=0.2.40
+  - plotly>=5.18
+  - streamlit>=1.37
+  - pip:
+      - transformers>=4.43
+      - torch==2.4.0
+      - torchvision==0.19.0
+      - torchaudio==2.4.0
