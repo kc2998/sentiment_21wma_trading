@@ -17,8 +17,7 @@ export FINNHUB_API_KEY=YOUR_KEY
 streamlit run app.py
 ```
 
-## Try the strategy
-sentiment21wmatrading-gxsxwxmxv82jukjyyxgr9v.streamlit.app
+## Try the strategy [HERE](sentiment21wmatrading-gxsxwxmxv82jukjyyxgr9v.streamlit.app)
 <img width="1913" height="946" alt="image" src="https://github.com/user-attachments/assets/8a8301c1-579f-4b94-a79f-6b002339c11c" />
 
 
@@ -92,7 +91,7 @@ flowchart TB
     D --> J[Join Price + Weekly Sentiment]
     I --> J
     J --> K[Entry/Exit Signals (t)]
-    K --> L[Execution t+1 → Position Series]
+    K --> L[Execution t+1 -> Position Series]
     L --> M[Weekly Backtest & Benchmark (SPY)]
     M --> N[Plots: Price+Bands, Extension, Equity vs SPY, Totals]
     style N fill:#e8f5ff,stroke:#8ecaff
