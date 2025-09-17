@@ -31,7 +31,7 @@ streamlit run app.py
 
 **Extension (%)**  
 $$
-\mathrm{extension}_t \;=\; \frac{\mathrm{Close}_t}{\mathrm{WMA}_{21}(t)} - 1
+\mathrm{ext}_t = \frac{\mathrm{Close}_t}{\mathrm{WMA}_{21}(t)} - 1
 $$
 
 ### News
@@ -45,7 +45,10 @@ $$
   $\big(p_{\mathrm{pos}},\; p_{\mathrm{neg}},\; p_{\mathrm{neu}}\big)$.
 
 **Per-headline score**  
-Inline: $s = p_{\mathrm{pos}} - p_{\mathrm{neg}} \in [-1,1]$
+Inline: 
+$$
+s = p_{\mathrm{pos}} - p_{\mathrm{neg}} \in [-1,1]
+$$
 
 Block:
 
