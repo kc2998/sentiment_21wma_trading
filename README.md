@@ -30,9 +30,9 @@ streamlit run app.py
 - Resampled to **weekly (W-FRI)** “close” and rolling **21-week MA (21WMA)**.
 
 **Extension (%)**  
-\[
+$$
 \text{extension}_t \;=\; \frac{\text{Close}_t}{\text{21WMA}_t} - 1
-\]
+$$
 
 ### News
 - **Finnhub Company News API** for historical headlines.
