@@ -80,19 +80,19 @@ Neutral confidence shrinks both \(p_{\text{pos}}\) and \(p_{\text{neg}}\), so ex
 
 ```mermaid
 flowchart TB
-    A[Select Ticker & Dates] --> B[Download Daily Prices (yfinance)]
-    B --> C[Resample to Weekly (W-FRI)]
-    C --> D[Compute 21WMA & Extension (%)]
-    A --> E[Fetch Company News (Finnhub)]
-    E --> F[Normalize & Deduplicate Headlines]
-    F --> G[Score Headlines with FinBERT<br/>(ProsusAI/finbert)]
-    G --> H[Map to Sentiment Week (Fri 15:45 ET cutoff)]
-    H --> I[Aggregate Weekly Sentiment<br/>S_wk = median(p_pos - p_neg), N=headlines]
-    D --> J[Join Price + Weekly Sentiment]
-    I --> J
-    J --> K[Entry/Exit Signals (t)]
-    K --> L[Execution t+1 -> Position Series]
-    L --> M[Weekly Backtest & Benchmark (SPY)]
-    M --> N[Plots: Price+Bands, Extension, Equity vs SPY, Totals]
-    style N fill:#e8f5ff,stroke:#8ecaff
+  A["Select Ticker & Dates"] --> B["Download Daily Prices (yfinance)"];
+  B --> C["Resample to Weekly (W-FRI)"];
+  C --> D["Compute 21WMA & Extension (%)"];
+  A --> E["Fetch Company News (Finnhub)"];
+  E --> F["Normalize & Deduplicate Headlines"];
+  F --> G["Score Headlines with FinBERT\n(ProsusAI/finbert)"];
+  G --> H["Map to Sentiment Week\n(Fri 15:45 ET cutoff)"];
+  H --> I["Aggregate Weekly Sentiment:\nS_wk = median(p_pos - p_neg), N=headlines"];
+  D --> J["Join Price + Weekly Sentiment"];
+  I --> J;
+  J --> K["Entry/Exit Signals (t)"];
+  K --> L["Execution t+1 -> Position Series"];
+  L --> M["Weekly Backtest & Benchmark (SPY)"];
+  M --> N["Plots: Price+Bands, Extension, Equity vs SPY, Totals"];
+  style N fill:#e8f5ff,stroke:#8ecaff
 ```
