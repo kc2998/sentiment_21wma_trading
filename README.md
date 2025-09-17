@@ -19,9 +19,8 @@ streamlit run app.py
 
 ## Try the strategy
 sentiment21wmatrading-gxsxwxmxv82jukjyyxgr9v.streamlit.app
+<img width="1913" height="946" alt="image" src="https://github.com/user-attachments/assets/8a8301c1-579f-4b94-a79f-6b002339c11c" />
 
-## Set parameters
-<img width="1910" height="856" alt="image" src="https://github.com/user-attachments/assets/9bbab87b-b585-4091-b700-f0fc00145773" />
 
 ---
 
@@ -80,8 +79,6 @@ Neutral confidence shrinks both \(p_{\text{pos}}\) and \(p_{\text{neg}}\), so ex
 
 ## Pipeline Diagram
 
-> GitHub renders Mermaid automatically.
-
 ```mermaid
 flowchart TB
     A[Select Ticker & Dates] --> B[Download Daily Prices (yfinance)]
@@ -99,3 +96,4 @@ flowchart TB
     L --> M[Weekly Backtest & Benchmark (SPY)]
     M --> N[Plots: Price+Bands, Extension, Equity vs SPY, Totals]
     style N fill:#e8f5ff,stroke:#8ecaff
+```
