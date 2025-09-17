@@ -30,6 +30,7 @@ streamlit run app.py
 - Resampled to **weekly (W-FRI)** “close” and rolling **21-week MA (21WMA)**.
 
 **Extension (%)**  
+
 $$
 \mathrm{ext}_t = \frac{\mathrm{Close}_t}{\mathrm{WMA}_{21}(t)} - 1
 $$
@@ -46,6 +47,7 @@ $$
 
 **Per-headline score**  
 Inline: 
+
 $$
 s = p_{\mathrm{pos}} - p_{\mathrm{neg}} \in [-1,1]
 $$
