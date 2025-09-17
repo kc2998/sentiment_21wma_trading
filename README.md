@@ -18,7 +18,7 @@ streamlit run app.py
 ```
 
 ## Try the strategy [HERE](sentiment21wmatrading-gxsxwxmxv82jukjyyxgr9v.streamlit.app)
-<img width="1913" height="946" alt="image" src="https://github.com/user-attachments/assets/8a8301c1-579f-4b94-a79f-6b002339c11c" />
+<img width="1388" height="974" alt="image" src="https://github.com/user-attachments/assets/ad1c5728-8c58-445b-9933-a154e70cdb7d" />
 
 
 ---
@@ -39,19 +39,22 @@ streamlit run app.py
 - Headlines are **deduplicated** (title+URL), normalized (lowercased, whitespace collapsed).
 
 ### Sentiment Model
+
 - **FinBERT** (`ProsusAI/finbert`) 3-class classifier: `positive`, `neutral`, `negative`.
-- We use 🤗 Transformers **pipeline**; softmax probs give \(p_{\text{pos}}, p_{\text{neg}}, p_{\text{neu}}\).
+- We use the 🤗 Transformers pipeline; softmax probabilities give  
+  $\big(p_{\mathrm{pos}},\; p_{\mathrm{neg}},\; p_{\mathrm{neu}}\big)$.
 
-**Per-headline score**
-\[
-s \;=\; p_{\text{pos}} - p_{\text{neg}} \;\in\; [-1, 1]
-\]
-Neutral confidence shrinks both \(p_{\text{pos}}\) and \(p_{\text{neg}}\), so extreme scores are rarer when text is neutral/ambiguous.
+**Per-headline score**  
+Inline: $s = p_{\mathrm{pos}} - p_{\mathrm{neg}} \in [-1,1]$
 
-**Weekly aggregation**
-- Map each headline to a **“sentiment week” ending Friday** (with a 15:45 ET cutover: Fri headlines at/after 15:45 roll to next week).
-- Aggregate \(s\) via **median** → \(S_{\text{wk}}\); also compute **N** = number of headlines that week.
-- Weeks with **N < min_headlines** are considered **insufficient** for signaling (still shown visually, lighter).
+Block:
+
+$$
+s = p_{\mathrm{pos}} - p_{\mathrm{neg}} \in [-1,1]
+$$
+
+**Weekly aggregation**  
+$S_{\mathrm{wk}} = \mathrm{median}\big(s\big)$, with $N$ = number of headlines in the week.
 
 ---
 
