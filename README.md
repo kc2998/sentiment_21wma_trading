@@ -43,7 +43,7 @@ $$
 
 - **FinBERT** (`ProsusAI/finbert`) 3-class classifier: `positive`, `neutral`, `negative`.
 - We use the 🤗 Transformers pipeline; softmax probabilities give  
-  $\big(p_{\mathrm{pos}},\; p_{\mathrm{neg}},\; p_{\mathrm{neu}}\big)$.
+  $\big(p_{\mathrm{pos}},\ p_{\mathrm{neg}},\ p_{\mathrm{neu}}\big)$.
 
 **Per-headline score**  
 Inline: 
