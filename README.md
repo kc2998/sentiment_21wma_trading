@@ -1,4 +1,4 @@
-# NLP-Driven Equity Strategy: FinBERT Sentiment × 21WMA — Streamlit App & Backtests
+# NLP Equity Mean Reversion Strategy on Public Sentiment (FinBERT) and Price Action (21WMA) - Streamlit App & Backtests
 
 Buy-only strategy: enter when a stock is **undervalued** (extension ≤ entry threshold vs 21-week MA) **and** weekly sentiment is **negative**; exit when **extension ≥ exit threshold** **and** weekly sentiment is **positive**. Backtests vs **SPY**.
 
