@@ -15,6 +15,7 @@ python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\act
 pip install -r requirements.txt
 export FINNHUB_API_KEY=YOUR_KEY
 streamlit run app.py
+```
 
 ## Try the strategy
 sentiment21wmatrading-gxsxwxmxv82jukjyyxgr9v.streamlit.app
