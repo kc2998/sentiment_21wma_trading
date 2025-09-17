@@ -31,7 +31,7 @@ streamlit run app.py
 
 **Extension (%)**  
 $$
-\text{extension}_t \;=\; \frac{\text{Close}_t}{\text{21WMA}_t} - 1
+\mathrm{extension}_t \;=\; \frac{\mathrm{Close}_t}{\mathrm{WMA}_{21}(t)} - 1
 $$
 
 ### News
